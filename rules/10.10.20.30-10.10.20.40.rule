@@ -1,0 +1,3 @@
+# Rules added by Mindflow
+DENY: ALL
+ALLOW: 80,443
