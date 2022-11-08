@@ -1,0 +1,27 @@
+name: Add email to interf
+
+on:
+  workflow_dispatch:
+    inputs:
+      emails:
+        description: 'Emails to add: split multiples by ","'
+        required: true
+        default: ''
+      ticket-id:
+        description: 'Jira ticket ID'
+        required: true
+        default: ''
+
+
+jobs:
+  add-email-in-interf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Add email to interf
+        env:
+          EMAILS: ${{ github.event.inputs.emails }}
+          TICKET_ID: ${{ github.event.inputs.ticket-id }}
+        run: echo ${{ github.event.inputs.emails }} - ${{github.event.inputs.ticket-id }}
