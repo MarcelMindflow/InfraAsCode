@@ -1,0 +1,14 @@
+Jira Ticket Content : 
+
+From: Microsoft Sentinel 
+Type: Microsoft.SecurityInsights/Incidents
+Title: This is a suspicious login alert
+Description: A suspicious connection was detected on the account fabrice@mindflow.io at 14:03 on November 09, 2022 from Gabon.
+Severity: Medium
+Owner: john@fabricemindflow.onmicrosoft.com
+nosniff/
+
+-1/ Medium
+/subscriptions/22d2b6d8-8760-43f5-9440-02cc25b82314/resourceGroups/mindflow-test/providers/Microsoft.OperationalInsights/workspaces/mindflow-microsoft-sentinel/providers/Microsoft.SecurityInsights/Incidents/05950bd1-b4a4-4b7e-87f9-53e85deecfd6
+e79d9f82-f378-40fd-a21e-688ca561e644
+11999
